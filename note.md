@@ -105,3 +105,60 @@
 ## Validation
 ## Middleware
 ## Built-In Methods 
+
+
+# EXPRESSJS - COOKIES
+
+## Cokkies are small data files sent from the server to the client, stored on the client's browser, They are sent back with every request to the server
+
+## Uses of Cookies
+
+## Session Management - Maintaining user login sessions.
+## Personalisation - Enhancing user exprience with recommendations.
+## User Tracking - Monitoring userr behavior on the website.
+## npm i cookie-parser
+
+
+
+# EXPRESSJS -SESSIONS
+
+## HTTP is stateless, meaning each request is independent and does not retain user data.
+
+## TO persist data between requests, we can use:
+## Cookies - Stored on the client, visible to users.
+## URL Parameters - Can be manipulated and exposed.
+## Session
+
+
+# AUTHENTICATION IN EXPRESSJS
+
+## Authentication is the process of verifying the identity of a user. In ExpressJS, authentication ensure thet only authorized users can access certain resoures.
+
+#  Implementing User Authentication in ExpressJS
+## There are two main ways to implement authentication in an expressJS application:
+
+## 1. Session-Based Authentication (Uses cookie and session)
+## 2. Token-Based Authentication (Uses JWT or OAuth tokens)
+
+## basic authentication flow:
+## 1. The user sends login credentials (email/password).
+## 2. The server verifies the credentials against a database.
+## 3. If valid, the server responds with a session (cookie) or a JWT token
+## 4 The client stores this session or token for subsequent requests
+## 5 For each request, the client sends the session/token for verification.
+
+
+# JWT - Based Authentication
+
+## JWT (Json Web Token) is a stateless authentication method that sends a token instead of storing on the server.
+
+## How JWT Works:
+## 1. The user logs in and recives a JWT token.
+## 2. The client stores the token (in localStorage or Authorization Header).
+## 3 The token is sent with every request.
+## 4 The server verifies the token and allows acces
+
+##  npm i jsonwebtoken
+##  npm i bcryptjs
+
+## npm -g express-generator  
