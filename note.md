@@ -88,3 +88,20 @@
 # We can use our file and folder to expose to server by express.static method like :-app.use('/images',express.static('images'))
 
 # Handling FORM Data
+
+# ExpressJS - Database
+
+## (MongoDB & Mongoose)
+
+## MongoDB - MongoDB is a popular, open-source, NoSQL database that stores data in flexible, JSON-like format called BSON (Binary JSON)
+
+## Documnet-Oriented
+## High Performance
+## Flexible Schema
+
+## Mongoose, is an Object Data Modeling (ODM) library for MongoDB and Node.js. It makes easier to interact with ans manipulate MongoDB documents in a more strcutured way
+
+## Schema-Based
+## Validation
+## Middleware
+## Built-In Methods 
