@@ -19,5 +19,28 @@ const userLogin = (req,res)=>{
 const userSignup = (req,res)=>{
     res.send('this is user signup route')
 }
+const userRegister = (req,res)=>{
+    const {name,email} = req.body;
+    res.json({
+        message:`User ${name} with email ${email} created succesfully`
+    })
+}
 
-module.exports =  {usernameController,searchController,contactController,userLogin,userSignup};
+const userUpdate = (req,res)=>{
+    const userId = req.params.id;
+    const {name,email}  = req.body;
+    res.json({
+        message:`User ${userId} updated to ${name}, ${email}`
+    })
+};
+
+const userDeleted = (req,res)=>{
+    const userID = req.params.id;
+    res.json({
+
+        message:`User with id ${userID} deleted from the page successfully`
+    })
+};
+
+
+module.exports =  {usernameController,searchController,contactController,userLogin,userSignup,userRegister,userDeleted,userUpdate};
